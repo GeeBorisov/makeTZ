@@ -1,0 +1,104 @@
+.ui__btn {
+    padding-bottom: 200px;
+    @media (max-width: 736px) {
+        padding-bottom: 100px;
+            }
+    &-title {
+        padding-bottom: 76px;
+        @media (max-width: 736px) {
+            padding-bottom: 38px;
+                }
+    }
+    &-btn {
+        max-width: 148px;
+        position: relative;
+        padding: 16px 32px;
+        background: linear-gradient(45deg, #dd80ed 0%, #3d28e3 100%);
+        border-radius: 32px;
+        color: var(--page-bg);
+        font-size: var(--pMain);
+        line-height: 24px;
+        &:hover {
+            background: linear-gradient(225deg, #dd80ed 0%, #3d28e3 100%);
+        }
+        &:active {
+            background: linear-gradient(207deg, #dd80ed 0%, #3d28e3 100%);
+        }
+        &:last-child::after {
+            position: absolute;
+            content: 'Неактивна';
+            left: 0;
+            bottom: 80px;
+            color: var(--grayText);
+            font-size: var(--supP);
+            line-height: 20px;
+        }
+        &:nth-child(2)::after {
+            position: absolute;
+            content: 'Ховер';
+            left: 0;
+            bottom: 80px;
+            color: var(--grayText);
+            font-size: var(--supP);
+            line-height: 20px;
+        }
+        &:nth-child(3)::after {
+            position: absolute;
+            content: 'Нажатие';
+            left: 0;
+            bottom: 80px;
+            color: var(--grayText);
+            font-size: var(--supP);
+            line-height: 20px;
+        }       
+
+    }
+}
+
+.ui__btns {
+//     display: flex;
+//     align-items: center;
+//     column-gap: 164px;
+//     row-gap: 76px;
+// flex-wrap: wrap;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+column-gap: var(--colWidth);
+justify-content: space-between;
+row-gap: 76px;
+    @media (max-width: 736px) {
+        column-gap: var(--colWidthMob);
+        grid-template-columns: repeat(2, 1fr);
+            }
+    @media (max-width: 540px) {
+        grid-template-columns: repeat(1, 1fr);
+            }
+}
+
+.disabled-btn {
+    background: #cbcbcc;
+    &:hover {
+    background: #cbcbcc;
+
+    }
+}
+.hover-btn {
+    background: linear-gradient(225deg, #dd80ed 0%, #3d28e3 100%);
+    &:hover {
+        background: linear-gradient(225deg, #dd80ed 0%, #3d28e3 100%);
+    }
+    &:active {
+        background: linear-gradient(225deg, #dd80ed 0%, #3d28e3 100%);
+    }
+}
+.click-btn {
+    background: linear-gradient(207deg, #dd80ed 0%, #3d28e3 100%);
+    &:hover {
+    background: linear-gradient(207deg, #dd80ed 0%, #3d28e3 100%);
+
+    }
+    &:active {
+    background: linear-gradient(207deg, #dd80ed 0%, #3d28e3 100%);
+
+    }
+}

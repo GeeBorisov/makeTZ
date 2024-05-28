@@ -1,0 +1,83 @@
+
+.grid {
+    &__title {
+        font-size: var(--headerH2);
+        font-weight: bold;
+        line-height: 40px;
+        padding-bottom: 24px;
+	@media (max-width: 736px) {
+        font-size: var(--headerH2Mob);
+        line-height: 36px;
+        padding-bottom: 12px;
+    }
+    }
+    &__text {
+        font-size: var(--pMain);
+        line-height: 24px;
+        padding-bottom: 48px;
+        @media (max-width: 736px) {
+            padding-bottom: 24px;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        row-gap: 64px;
+        @media (max-width: 736px) {
+            row-gap: 32px;
+        }
+    }
+    &__card {
+        &-title {
+            font-size: var(--headerH3);
+            line-height: 32px;
+            padding-bottom: 32px;
+            @media (max-width: 736px) {
+                font-size: var(--headerH3Mob);
+                line-height: 28px;
+                padding-bottom: 16px;
+            }
+            @media (max-width: 390px) {
+                font-size: 22px !important;
+            }
+        }
+        &-columns {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-between;
+            column-gap: var(--colWidth);  
+            @media (max-width: 736px) {
+                column-gap: var(--colWidthMob);
+                grid-template-columns: repeat(2, 1fr);
+                    }      
+                    @media (max-width: 480px) {
+                        width: 50%;
+                        grid-template-columns: repeat(1, 1fr);
+
+                    }
+        }
+        &-column {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            padding-bottom: 48px;
+            @media (max-width: 736px) {
+                padding-bottom: 24px;
+                    }     
+        }
+    }
+}
+
+.column__title {
+    font-size: var(--supP);
+    color: var(--grayText);
+    line-height: 20px;
+}
+.column__value {
+    font-size: var(--pLead);
+    line-height: 32px;
+	@media (max-width: 736px) {
+    font-size: var(--pLeadMob);
+    line-height: 28px;
+    }
+}

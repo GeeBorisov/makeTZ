@@ -1,0 +1,42 @@
+.header {
+	padding: 42px 0 48px;
+	font-size: var(--supP);
+	@media (max-width: 736px) {
+		padding: 21px 0 24px;
+	  }
+
+}
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+	display: flex;
+	position: relative;
+	gap: 24px;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -6px;
+		width: 40px;
+		height: 40px;
+		background: #FF3A62;
+		border-radius: 50%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+		z-index: 99;
+	}
+	img {
+		z-index: 99;
+
+	}
+}
+.name {
+	line-height: 20px;
+	span {
+		color: var(--grayText);
+	}
+
+}

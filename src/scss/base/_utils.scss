@@ -1,0 +1,198 @@
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+
+.textWidth {
+	width: 592px;
+    @media (max-width: 1200px) { 
+		width: unset;
+	}
+}
+.headerH1 {
+	font-size: 48px;
+	line-height: 56px;
+	font-weight: 700;
+	@media (max-width: 736px) {
+		font-size: 32px;
+		line-height: 40px;
+		font-weight: 700;
+    }
+}
+.headerH2 {
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 700;
+	@media (max-width: 736px) {
+		font-size: 28px;
+		line-height: 36px;
+		font-weight: 700;
+    }
+	@media (max-width: 390px) {
+		font-size: 20px !important;
+		line-height: 28px;
+		font-weight: 500;
+    }
+
+}
+.headerH3 {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 500;
+	@media (max-width: 736px) {
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 500;
+    }
+	@media (max-width: 390px) {
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 500;
+    }
+
+
+}
+.headerH4 {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 500;
+}
+.pLead {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 300;
+	@media (max-width: 736px) {
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 300;
+    }
+
+}
+.pBig {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+}
+.pMain {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+}
+.supP {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 300;
+
+}
+
+
+// Mobile
+.headerH1Mob {
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 700;
+}
+.headerH2Mob {
+	font-size: 28px;
+	line-height: 36px;
+	font-weight: 700;
+
+}
+.headerH3Mob {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 500;
+
+}
+.headerH4Mob {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 500;
+
+}
+.pLeadMob {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 300;
+
+}
+.pBigMob {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+}
+.pMainMob {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+}
+.supPMob{
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 300;
+
+}
+
+.block {
+	display: block !important;
+}
+
+// Desc Table
+.headerH1Desc {
+	font-size: 48px;
+	line-height: 56px;
+	font-weight: 700;
+}
+.headerH2Desc {
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 700;
+}
+.headerH3Desc {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 500;
+}
+.headerH4Desc {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 500;
+}
+.pLeadDesc {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 300;
+}
+.pBigDesc {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+}
+.pMainDesc {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+}
+.supPDesc {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 300;
+
+}

@@ -1,0 +1,45 @@
+.header__btn-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+	float: right;
+    align-items: end;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+	row-gap: 6px;
+	z-index: 999;
+}
+
+.nav-icon__line {
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.3s ease;
+}
+
+.nav-icon__line--1 {
+	width: 32px;
+    transform-origin: top left;
+}
+
+.nav-icon__line--2 {
+	width: 24px;
+    transform-origin: bottom left;
+}
+
+.nav-icon__line--active {
+    background-color: #fff;
+    @media (max-width: 800px) {
+        background-color: #000;
+	  }
+}
+
+.nav-icon__line--active:nth-child(1) {
+    transform: translateY(-6px) rotate(45deg);
+	width: 24px;
+
+}
+
+.nav-icon__line--active:nth-child(2) {
+    transform: translateY(2px) rotate(-45deg);
+}

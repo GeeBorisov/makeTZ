@@ -1,0 +1,20 @@
+.container {
+	padding: 0 var(--container-padding);
+	max-width: var(--container-width);
+	margin: 0 auto;
+
+	@media (max-width: 1200px) {
+		max-width: var(--container-tabletWidth);
+	  }
+	@media (max-width: 736px) {
+		padding: 0 var(--container-mobPadding);
+	  }
+}
+
+
+// .row {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	margin: -16px;
+//   }
+  

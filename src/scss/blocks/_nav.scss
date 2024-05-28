@@ -1,0 +1,37 @@
+.nav-section {
+    position: fixed;
+    padding-top: 168px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 147px;
+
+    &__item {
+        a {
+            display: block;
+            font-size: var(--supP);
+            line-height: 20px;
+            color: var(--grayText);
+            cursor: pointer;
+            @media (max-width: 480px) {
+                width: 50%;
+            }
+    
+            &:hover {
+                color: var(--text-color);
+            }
+            &:active {
+            color: var(--blue);
+
+            }
+        }
+        .active-nav {
+            color: var(--blue);
+        }
+
+    }
+}
+
+.nav-block {
+    width: 147px;
+}

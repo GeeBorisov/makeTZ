@@ -1,0 +1,28 @@
+.partingWords {
+    &__title {
+        font-size: var(--headerH1);
+        font-weight: bold;
+        line-height: 56px;
+        padding-bottom: 16px;
+	@media (max-width: 736px) {
+        font-size: var(--headerH1Mob);
+        line-height: 40px;
+        padding-bottom: 8px;
+    }
+    }
+    &__subtitle {
+        font-size: var(--headerH3);
+        line-height: 32px;
+        padding-bottom: 64px;
+        @media (max-width: 736px) {
+            font-size: var(--headerH3Mob);
+            line-height: 28px;
+        padding-bottom: 32px;
+        }
+    }
+    &__text {
+        font-size: var(--pMain);
+        line-height: 24px;
+    }
+}
+

@@ -1,0 +1,39 @@
+:root {
+	--container-width: 1312px;
+	--container-padding:32px;
+	--container-tabletWidth: 928px;
+	--container-mobWidth: 424px;
+	--container-mobPadding:24px;
+
+
+	--font-main: 'Graphik', sans-serif;
+
+	--page-bg: #fff;
+	--text-color: #1B1B1B;
+	--accent: #ac182c;
+	--grayText: #7D7D7D;
+	--blue: #3E29E3;
+	--uiGray: #AEADAE;
+	--white: #fff;
+    --laptop-size: 1344px;
+	--tablet-size: 736px;
+	--mobile-size: 320px;
+
+	--headerH1: 48px;
+	--headerH2: 32px;
+	--headerH3: 24px;
+	--headerH4: 18px;
+	--pLead: 24px;
+	--pBig: 18px;
+	--pMain: 16px;
+	--supP: 14px;
+// mobile
+	--headerH1Mob: 32px;
+	--headerH2Mob: 28px;
+	--headerH3Mob: 20px;
+	--pLeadMob: 20px;
+
+	--colWidth: 32px;
+	--colWidthTablet: 32px;
+	--colWidthMob: 24px;
+}

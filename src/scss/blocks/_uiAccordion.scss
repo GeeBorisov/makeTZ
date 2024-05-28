@@ -1,0 +1,84 @@
+.ui__accordion {
+    padding-bottom: 80px;
+}
+.accordion {
+    // width: 100%;
+    border-bottom: 1px solid #CBCBCC;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    &:hover {
+    border-bottom: 1px solid var(--blue);
+    }
+    &__title{
+        padding-top: 64px;
+        padding-bottom: 32px;
+        @media (max-width: 736px) {
+            padding-top: 32px;
+                }
+        }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    } 
+    &__caret {
+        width: 6px;
+        height: 6px;
+        border-left: 2px solid var(--blue);
+        border-top: 2px solid var(--blue);
+        transition: 0.3s;
+        transform: rotate(225deg);
+        &__rotate {
+            transform: rotate(405deg);
+        }
+    }
+    &__name {
+        font-size: var(--pMain);
+        color: var(--grayText);
+    }
+    &__answer{
+        font-size: var(--pMain);
+        line-height: 24px;
+        padding: 24px 0;
+    }
+    &__content{
+        overflow: hidden;
+        height: 0;
+        transition: 0.4s ease-in-out; 
+        &-open {
+            height: unset;
+        }
+    }
+}
+
+.accordion:hover {
+    border-bottom-color: #3E29E3;
+}
+
+.accordion.active {
+    border-bottom-color: var(--blue);
+}
+
+.accordion.active:hover .accordion__name {
+    color: var(--grayText);
+}
+
+.activeAccardion {
+    border-bottom: 1px solid var(--blue);
+}
+
+.activeName {
+color: var(--blue);
+}
+.activeNameHover {
+    color: var(--text-color);
+}
+.activeNameOpen {
+color: var(--blue);
+}
